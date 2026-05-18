@@ -1,0 +1,77 @@
+{
+  "baseline_weights": {},
+  "optimized_weights": {
+    "brightness": 0.07465055044140076,
+    "center_bias": 0.15148273319473657,
+    "edge_density": 0.17072600362110352,
+    "novelty": 0.06826291062021378,
+    "roi_brightness": 0.1050406534509852,
+    "roi_edge_density": 0.03720844224178185,
+    "roi_sharpness": 0.1618181649103322,
+    "sharpness": 0.23081054151944597
+  },
+  "weight_comparison": {},
+  "baseline_metrics": {
+    "hit@1": 0.0,
+    "hit@3": 0.0,
+    "hit@5": 0.0,
+    "mrr": 0.019782596921157396,
+    "ap": 0.031410704647183096,
+    "mean_min_distance": 5163.003115264797,
+    "pairwise_accuracy": 0.0
+  },
+  "optimized_metrics": {
+    "hit@1": 1.0,
+    "hit@3": 1.0,
+    "hit@5": 1.0,
+    "mrr": 0.019782596921157396,
+    "ap": 0.03977565753550702,
+    "mean_min_distance": 4918.8753894081,
+    "pairwise_accuracy": 0.5478811404840588
+  },
+  "metric_deltas": {
+    "hit@1": {
+      "baseline": 0.0,
+      "optimized": 1.0,
+      "delta": 1.0,
+      "pct_change": 0.0
+    },
+    "hit@3": {
+      "baseline": 0.0,
+      "optimized": 1.0,
+      "delta": 1.0,
+      "pct_change": 0.0
+    },
+    "hit@5": {
+      "baseline": 0.0,
+      "optimized": 1.0,
+      "delta": 1.0,
+      "pct_change": 0.0
+    },
+    "mrr": {
+      "baseline": 0.019782596921157396,
+      "optimized": 0.019782596921157396,
+      "delta": 0.0,
+      "pct_change": 0.0
+    },
+    "ap": {
+      "baseline": 0.031410704647183096,
+      "optimized": 0.03977565753550702,
+      "delta": 0.008364952888323923,
+      "pct_change": 26.630898549657623
+    },
+    "mean_min_distance": {
+      "baseline": 5163.003115264797,
+      "optimized": 4918.8753894081,
+      "delta": -244.127725856697,
+      "pct_change": -4.7284055501519155
+    },
+    "pairwise_accuracy": {
+      "baseline": 0.0,
+      "optimized": 0.5478811404840588,
+      "delta": 0.5478811404840588,
+      "pct_change": 0.0
+    }
+  },
+  "test_set_size": 10847
+}

@@ -1,0 +1,143 @@
+{
+  "baseline_weights": {
+    "sharpness": 0.1,
+    "edge_density": 0.12,
+    "brightness": 0.04,
+    "novelty": 0.0,
+    "center_bias": 0.0,
+    "roi_sharpness": 0.26,
+    "roi_edge_density": 0.32,
+    "roi_brightness": 0.06
+  },
+  "optimized_weights": {
+    "brightness": 0.04917210118471935,
+    "center_bias": 0.0009925064368187194,
+    "edge_density": 0.12437604860737901,
+    "novelty": 0.008452026119741322,
+    "roi_brightness": 0.07438846596970915,
+    "roi_edge_density": 0.35083495961716415,
+    "roi_sharpness": 0.28703961492929164,
+    "sharpness": 0.10474427713517674
+  },
+  "weight_comparison": {
+    "sharpness": {
+      "baseline": 0.1,
+      "optimized": 0.10474427713517674,
+      "delta": 0.004744277135176736,
+      "pct_change": 4.744277135176736
+    },
+    "edge_density": {
+      "baseline": 0.12,
+      "optimized": 0.12437604860737901,
+      "delta": 0.004376048607379016,
+      "pct_change": 3.6467071728158467
+    },
+    "brightness": {
+      "baseline": 0.04,
+      "optimized": 0.04917210118471935,
+      "delta": 0.009172101184719346,
+      "pct_change": 22.930252961798363
+    },
+    "novelty": {
+      "baseline": 0.0,
+      "optimized": 0.008452026119741322,
+      "delta": 0.008452026119741322,
+      "pct_change": 0.0
+    },
+    "center_bias": {
+      "baseline": 0.0,
+      "optimized": 0.0009925064368187194,
+      "delta": 0.0009925064368187194,
+      "pct_change": 0.0
+    },
+    "roi_sharpness": {
+      "baseline": 0.26,
+      "optimized": 0.28703961492929164,
+      "delta": 0.027039614929291633,
+      "pct_change": 10.399851895881397
+    },
+    "roi_edge_density": {
+      "baseline": 0.32,
+      "optimized": 0.35083495961716415,
+      "delta": 0.030834959617164148,
+      "pct_change": 9.635924880363795
+    },
+    "roi_brightness": {
+      "baseline": 0.06,
+      "optimized": 0.07438846596970915,
+      "delta": 0.01438846596970915,
+      "pct_change": 23.980776616181917
+    }
+  },
+  "baseline_metrics": {
+    "hit@1": 0.10344827586206896,
+    "hit@3": 0.41379310344827586,
+    "hit@5": 0.6206896551724138,
+    "mrr": 0.33749315818281334,
+    "ap": 0.33174603174603173,
+    "mean_min_distance": 3.8275862068965516,
+    "pairwise_accuracy": 0.4851490463559429,
+    "asym_nearest_distance": 1.579310344827586
+  },
+  "optimized_metrics": {
+    "hit@1": 0.10344827586206896,
+    "hit@3": 0.41379310344827586,
+    "hit@5": 0.6206896551724138,
+    "mrr": 0.33653530377668306,
+    "ap": 0.33078817733990146,
+    "mean_min_distance": 3.896551724137931,
+    "pairwise_accuracy": 0.47786935286935284,
+    "asym_nearest_distance": 1.475862068965517
+  },
+  "metric_deltas": {
+    "hit@1": {
+      "baseline": 0.10344827586206896,
+      "optimized": 0.10344827586206896,
+      "delta": 0.0,
+      "pct_change": 0.0
+    },
+    "hit@3": {
+      "baseline": 0.41379310344827586,
+      "optimized": 0.41379310344827586,
+      "delta": 0.0,
+      "pct_change": 0.0
+    },
+    "hit@5": {
+      "baseline": 0.6206896551724138,
+      "optimized": 0.6206896551724138,
+      "delta": 0.0,
+      "pct_change": 0.0
+    },
+    "mrr": {
+      "baseline": 0.33749315818281334,
+      "optimized": 0.33653530377668306,
+      "delta": -0.0009578544061302763,
+      "pct_change": -0.28381446642880553
+    },
+    "ap": {
+      "baseline": 0.33174603174603173,
+      "optimized": 0.33078817733990146,
+      "delta": -0.0009578544061302763,
+      "pct_change": -0.2887312324698919
+    },
+    "mean_min_distance": {
+      "baseline": 3.8275862068965516,
+      "optimized": 3.896551724137931,
+      "delta": 0.06896551724137945,
+      "pct_change": 1.8018018018018056
+    },
+    "pairwise_accuracy": {
+      "baseline": 0.4851490463559429,
+      "optimized": 0.47786935286935284,
+      "delta": -0.0072796934865900775,
+      "pct_change": -1.5005066053967115
+    },
+    "asym_nearest_distance": {
+      "baseline": 1.579310344827586,
+      "optimized": 1.475862068965517,
+      "delta": -0.10344827586206895,
+      "pct_change": -6.550218340611353
+    }
+  },
+  "test_set_size": 1031
+}

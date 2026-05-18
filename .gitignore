@@ -1,0 +1,43 @@
+# Môi trường ảo (Quan trọng nhất)
+.venv/
+venv/
+env/
+
+# File cache của Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Các file biến môi trường (chứa API Key, Password...)
+.env
+
+# Cấu hình IDE (VS Code, PyCharm...)
+.vscode/
+.idea/
+
+# File rác của hệ điều hành
+.DS_Store
+Thumbs.db
+
+
+# Bỏ qua thư mục chứa video dataset
+src/video/train/dataset/videos/
+
+# Bỏ qua thư mục chứa kết quả output
+outputs_batch_last/
+
+
+
+# Bỏ qua các file video, âm thanh
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Bỏ qua các file Model AI / Trọng số (rất nặng)
+*.pth
+*.pt
+*.onnx
+*.weights
+*.bin

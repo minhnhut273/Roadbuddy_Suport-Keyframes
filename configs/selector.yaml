@@ -1,0 +1,258 @@
+# fps_sample: 3.0
+# fps_coarse: 2.0
+# fps_refine: 6.0
+# max_frames_per_video: 96
+# top_k: 4
+# temporal_nms_gap_sec: 0.5
+# coarse_top_m: 2
+# refine_window_sec: 1.0
+# trim_ratio: 0.1
+
+# roi_regions:
+#   - [0.30, 0.00, 0.70, 0.35]
+#   - [0.55, 0.00, 1.00, 0.40]
+#   - [0.25, 0.20, 0.75, 0.60]
+
+# weights:
+#   sharpness: 0.12
+#   edge_density: 0.10
+#   brightness: 0.04
+#   novelty: 0.00
+#   center_bias: 0.03
+#   roi_sharpness: 0.34
+#   roi_edge_density: 0.30
+#   roi_brightness: 0.07
+
+# eval_tolerances_sec: [0.25, 0.5, 1.0]
+# save_top_frames: true
+
+# use_rerank: false
+# ocr_gpu: false
+
+# type_aware: true
+
+# type_to_policy:
+#   sign_identification: sign_policy
+#   information_reading: sign_policy
+#   navigation: sign_policy
+#   other: sign_policy
+
+#   rule_compliance: lane_policy
+#   verification: lane_policy
+
+#   object_presence: coverage_policy
+#   counting: coverage_policy
+
+# policy_configs:
+#   sign_policy:
+#     top_k: 4
+#     temporal_nms_gap_sec: 0.40
+#     refine_window_sec: 0.85
+#     fps_refine: 7.0
+#     roi_regions:
+#       - [0.30, 0.00, 0.72, 0.34]
+#       - [0.52, 0.00, 1.00, 0.42]
+#       - [0.22, 0.14, 0.82, 0.56]
+#     weights:
+#       sharpness: 0.06
+#       edge_density: 0.06
+#       brightness: 0.02
+#       novelty: 0.00
+#       center_bias: 0.00
+#       roi_sharpness: 0.38
+#       roi_edge_density: 0.40
+#       roi_brightness: 0.08
+
+#   lane_policy:
+#     top_k: 4
+#     temporal_nms_gap_sec: 0.45
+#     refine_window_sec: 1.0
+#     fps_refine: 6.0
+#     roi_regions:
+#       - [0.28, 0.00, 0.70, 0.28]
+#       - [0.18, 0.24, 0.82, 0.72]
+#       - [0.00, 0.45, 1.00, 1.00]
+#     weights:
+#       sharpness: 0.12
+#       edge_density: 0.16
+#       brightness: 0.04
+#       novelty: 0.00
+#       center_bias: 0.02
+#       roi_sharpness: 0.24
+#       roi_edge_density: 0.28
+#       roi_brightness: 0.04
+
+#   coverage_policy:
+#     top_k: 10
+#     temporal_nms_gap_sec: 0.35
+#     refine_window_sec: 1.1
+#     fps_refine: 6.0
+#     roi_regions:
+#       - [0.18, 0.00, 0.82, 0.42]
+#       - [0.00, 0.18, 1.00, 0.82]
+#     weights:
+#       sharpness: 0.10
+#       edge_density: 0.12
+#       brightness: 0.04
+#       novelty: 0.00
+#       center_bias: 0.00
+#       roi_sharpness: 0.26
+#       roi_edge_density: 0.32
+#       roi_brightness: 0.06
+
+
+
+fps_sample: 3.0
+fps_coarse: 2.0
+fps_refine: 6.0
+max_frames_per_video: 96
+top_k: 10
+temporal_nms_gap_sec: 0.5
+coarse_top_m: 2
+refine_window_sec: 1.0
+trim_ratio: 0.1
+
+roi_regions:
+  - [0.30, 0.00, 0.70, 0.35]
+  - [0.55, 0.00, 1.00, 0.40]
+  - [0.25, 0.20, 0.75, 0.60]
+
+weights:
+  sharpness: 0.11950639332371085
+  edge_density: 0.09972701768969046
+  brightness: 0.03944823614146095
+  novelty: 0.000002658014343519487
+  center_bias: 0.029755205945831312
+  roi_sharpness: 0.3407472807432398
+  roi_edge_density: 0.30065936418262584
+  roi_brightness: 0.07015384395909718
+
+eval_tolerances_sec: [0.25, 0.5, 1.0]
+save_top_frames: true
+
+use_rerank: false
+ocr_gpu: false
+
+type_aware: true
+
+type_to_policy:
+  sign_identification: sign_policy
+  information_reading: sign_policy
+  navigation: sign_policy
+  other: sign_policy
+
+  rule_compliance: lane_policy
+  verification: lane_policy
+
+  object_presence: coverage_policy
+  counting: coverage_policy
+
+policy_configs:
+  sign_policy:
+    top_k: 10
+    temporal_nms_gap_sec: 0.40
+    refine_window_sec: 0.85
+    fps_refine: 7.0
+    roi_regions:
+      - [0.30, 0.00, 0.72, 0.34]
+      - [0.52, 0.00, 1.00, 0.42]
+      - [0.22, 0.14, 0.82, 0.56]
+    # OPTIMIZED WEIGHTS (hard_negative_ratio=0.5)
+    # Test Results: hit@3 +5.9%, hit@5 +2.9%, MRR +2.0%
+    weights:
+    #   sharpness: 0.0628244235950592
+    #   edge_density: 0.07083003210430476
+    #   brightness: 0.002431318146426647
+    #   novelty: 0.0006133904440990769
+    #   center_bias: 0.001719349361464989
+    #   roi_sharpness: 0.38003226227115017
+    #   roi_edge_density: 0.3999262123043595
+    #   roi_brightness: 0.08162301177313558
+        brightness: 0.00211756782020826
+        center_bias: 0.0017057231876810373
+        edge_density: 0.07096294462162889
+        novelty: 0.000586540005407849
+        roi_brightness: 0.08164489224276328
+        roi_edge_density: 0.40003343899317756
+        roi_sharpness: 0.3801341548212688
+        sharpness: 0.06281473830786427
+    # OLD WEIGHTS (baseline)
+    # weights:
+    #   sharpness: 0.0628425045351975
+    #   edge_density: 0.0688409265663628
+    #   brightness: 0.006951652955430345
+    #   novelty: 0.0009924629820604507
+    #   center_bias: 0.001894742591616989
+    #   roi_sharpness: 0.37866320492668265
+    #   roi_edge_density: 0.3984854838131742
+    #   roi_brightness: 0.0813290216294752
+
+
+
+  lane_policy:
+    top_k: 10
+    temporal_nms_gap_sec: 0.45
+    refine_window_sec: 1.0
+    fps_refine: 6.0
+    roi_regions:
+      - [0.28, 0.00, 0.70, 0.28]
+      - [0.18, 0.24, 0.82, 0.72]
+      - [0.00, 0.45, 1.00, 1.00]
+    # OPTIMIZED WEIGHTS (hard_negative_ratio=0.5)
+    # Test Results: hit@3 +9.1%, pairwise_accuracy +11.4%, MRR +2.8%
+    weights:
+      sharpness: 0.13202779639007267
+      edge_density: 0.17723435050508687
+      brightness: 0.04326353765048581
+      novelty: 0.001093716281822871
+      center_bias: 0.022965773371262217
+      roi_sharpness: 0.26685747144074495
+      roi_edge_density: 0.31114686857097656
+      roi_brightness: 0.04541048578954805
+    # OLD WEIGHTS (baseline)
+    # weights:
+    #   sharpness: 0.13264734206403753
+    #   edge_density: 0.17730646783726628
+    #   brightness: 0.04415575082241932
+    #   novelty: 0.0011042533482875819
+    #   center_bias: 0.023050071565541886
+    #   roi_sharpness: 0.26613888336282265
+    #   roi_edge_density: 0.3103090172943244
+    #   roi_brightness: 0.045288213705300145
+
+
+
+  coverage_policy:
+    top_k: 10
+    temporal_nms_gap_sec: 0.35
+    refine_window_sec: 1.1
+    fps_refine: 6.0
+    roi_regions:
+      - [0.18, 0.00, 0.82, 0.42]
+      - [0.00, 0.18, 1.00, 0.82]
+    weights:
+      sharpness: 0.10
+      edge_density: 0.12
+      brightness: 0.04
+      novelty: 0.00
+      center_bias: 0.00
+      roi_sharpness: 0.26
+      roi_edge_density: 0.32
+      roi_brightness: 0.06
+
+
+
+rerank:
+  enabled: false
+
+  policy_rerank:
+    sign_policy:
+      enabled: false
+      candidate_pool_size: 12
+      local_window_sec: 1.2
+
+      weights:
+        visual_score: 0.55
+        text_score: 0.20
+        sign_area_score: 0.15
+        temporal_stability_score: 0.10

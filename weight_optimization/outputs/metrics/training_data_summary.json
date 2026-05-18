@@ -1,0 +1,191 @@
+{
+  "total_statistics": {
+    "total_samples": 54213,
+    "support_samples": 1505,
+    "non_support_samples": 52708,
+    "support_ratio": 0.027760869164222605,
+    "by_question_type": {
+      "rule_compliance": {
+        "total": 1839,
+        "support": 44
+      },
+      "navigation": {
+        "total": 2463,
+        "support": 72
+      },
+      "sign_identification": {
+        "total": 39420,
+        "support": 1095
+      },
+      "verification": {
+        "total": 1670,
+        "support": 40
+      },
+      "information_reading": {
+        "total": 3669,
+        "support": 98
+      },
+      "object_presence": {
+        "total": 4635,
+        "support": 139
+      },
+      "counting": {
+        "total": 517,
+        "support": 17
+      }
+    },
+    "feature_names": [
+      "sharpness",
+      "edge_density",
+      "brightness",
+      "novelty",
+      "center_bias",
+      "roi_sharpness",
+      "roi_edge_density",
+      "roi_brightness"
+    ]
+  },
+  "train_statistics": {
+    "total_samples": 32526,
+    "support_samples": 883,
+    "non_support_samples": 31643,
+    "support_ratio": 0.02714751275902355,
+    "by_question_type": {
+      "rule_compliance": {
+        "total": 1103,
+        "support": 26
+      },
+      "navigation": {
+        "total": 1477,
+        "support": 47
+      },
+      "sign_identification": {
+        "total": 23652,
+        "support": 634
+      },
+      "verification": {
+        "total": 1002,
+        "support": 20
+      },
+      "information_reading": {
+        "total": 2201,
+        "support": 66
+      },
+      "object_presence": {
+        "total": 2781,
+        "support": 78
+      },
+      "counting": {
+        "total": 310,
+        "support": 12
+      }
+    },
+    "feature_names": [
+      "sharpness",
+      "edge_density",
+      "brightness",
+      "novelty",
+      "center_bias",
+      "roi_sharpness",
+      "roi_edge_density",
+      "roi_brightness"
+    ]
+  },
+  "val_statistics": {
+    "total_samples": 10840,
+    "support_samples": 301,
+    "non_support_samples": 10539,
+    "support_ratio": 0.02776752767527675,
+    "by_question_type": {
+      "rule_compliance": {
+        "total": 367,
+        "support": 7
+      },
+      "navigation": {
+        "total": 492,
+        "support": 14
+      },
+      "sign_identification": {
+        "total": 7884,
+        "support": 216
+      },
+      "verification": {
+        "total": 334,
+        "support": 10
+      },
+      "information_reading": {
+        "total": 733,
+        "support": 18
+      },
+      "object_presence": {
+        "total": 927,
+        "support": 34
+      },
+      "counting": {
+        "total": 103,
+        "support": 2
+      }
+    },
+    "feature_names": [
+      "sharpness",
+      "edge_density",
+      "brightness",
+      "novelty",
+      "center_bias",
+      "roi_sharpness",
+      "roi_edge_density",
+      "roi_brightness"
+    ]
+  },
+  "test_statistics": {
+    "total_samples": 10847,
+    "support_samples": 321,
+    "non_support_samples": 10526,
+    "support_ratio": 0.029593435973080114,
+    "by_question_type": {
+      "rule_compliance": {
+        "total": 369,
+        "support": 11
+      },
+      "navigation": {
+        "total": 494,
+        "support": 11
+      },
+      "sign_identification": {
+        "total": 7884,
+        "support": 245
+      },
+      "verification": {
+        "total": 334,
+        "support": 10
+      },
+      "information_reading": {
+        "total": 735,
+        "support": 14
+      },
+      "object_presence": {
+        "total": 927,
+        "support": 27
+      },
+      "counting": {
+        "total": 104,
+        "support": 3
+      }
+    },
+    "feature_names": [
+      "sharpness",
+      "edge_density",
+      "brightness",
+      "novelty",
+      "center_bias",
+      "roi_sharpness",
+      "roi_edge_density",
+      "roi_brightness"
+    ]
+  },
+  "split_ratios": {
+    "train": 0.5999667976315644,
+    "val": 0.19995204102337077,
+    "test": 0.20008116134506485
+  }
+}

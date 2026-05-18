@@ -1,0 +1,218 @@
+﻿=== START 2026-05-17 02:13:26 ===
+=== POLICY=sign_policy | HARD_NEG_RATIO=0.25 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=sign_policy | HARD_NEG_RATIO=0.25 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=sign_policy | HARD_NEG_RATIO=0.25 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=sign_policy | HARD_NEG_RATIO=0.5 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=sign_policy | HARD_NEG_RATIO=0.5 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=sign_policy | HARD_NEG_RATIO=0.5 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=sign_policy | HARD_NEG_RATIO=0.75 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=sign_policy | HARD_NEG_RATIO=0.75 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=sign_policy | HARD_NEG_RATIO=0.75 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=lane_policy | HARD_NEG_RATIO=0.25 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=lane_policy | HARD_NEG_RATIO=0.25 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=lane_policy | HARD_NEG_RATIO=0.25 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=lane_policy | HARD_NEG_RATIO=0.5 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=lane_policy | HARD_NEG_RATIO=0.5 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=lane_policy | HARD_NEG_RATIO=0.5 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=lane_policy | HARD_NEG_RATIO=0.75 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=lane_policy | HARD_NEG_RATIO=0.75 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=lane_policy | HARD_NEG_RATIO=0.75 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=coverage_policy | HARD_NEG_RATIO=0.25 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=coverage_policy | HARD_NEG_RATIO=0.25 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=coverage_policy | HARD_NEG_RATIO=0.25 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=coverage_policy | HARD_NEG_RATIO=0.5 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=coverage_policy | HARD_NEG_RATIO=0.5 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=coverage_policy | HARD_NEG_RATIO=0.5 | END 2026-05-17 02:13:26 ===
+
+=== POLICY=coverage_policy | HARD_NEG_RATIO=0.75 | START 2026-05-17 02:13:26 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:14 char:5
++     python weight_optimization/optimize/ranking_optimizer.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== EVAL POLICY=coverage_policy | HARD_NEG_RATIO=0.75 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:26 char:5
++     python weight_optimization/eval/evaluate_weights.py `
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== POLICY=coverage_policy | HARD_NEG_RATIO=0.75 | END 2026-05-17 02:13:26 ===
+
+=== END 2026-05-17 02:13:26 ===

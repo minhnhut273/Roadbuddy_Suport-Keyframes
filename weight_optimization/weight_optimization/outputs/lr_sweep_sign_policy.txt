@@ -1,0 +1,94 @@
+﻿=== START 2026-05-17 02:09:39 ===
+=== SIGN_POLICY | LR=0.001 | START 2026-05-17 02:09:39 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:12 char:3
++   python weight_optimization/optimize/ranking_optimizer.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:24 char:3
++   python weight_optimization/eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== SIGN_POLICY | LR=0.001 | END 2026-05-17 02:09:39 ===
+
+=== SIGN_POLICY | LR=0.003 | START 2026-05-17 02:09:39 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:12 char:3
++   python weight_optimization/optimize/ranking_optimizer.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:24 char:3
++   python weight_optimization/eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== SIGN_POLICY | LR=0.003 | END 2026-05-17 02:09:39 ===
+
+=== SIGN_POLICY | LR=0.005 | START 2026-05-17 02:09:39 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:12 char:3
++   python weight_optimization/optimize/ranking_optimizer.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:24 char:3
++   python weight_optimization/eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== SIGN_POLICY | LR=0.005 | END 2026-05-17 02:09:39 ===
+
+=== SIGN_POLICY | LR=0.01 | START 2026-05-17 02:09:39 ===
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\optimi
+ze\\ranking_optimizer.py': [Errno 2] No such file or directory
+At line:12 char:3
++   python weight_optimization/optimize/ranking_optimizer.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+python : C:\Python310\python.exe: can't open file 'D:\\DOWNLOAD\\ZALO_CHAL
+LENGE\\new\\roadbuddy_sf\\weight_optimization\\weight_optimization\\eval\\
+evaluate_weights.py': [Errno 2] No such file or directory
+At line:24 char:3
++   python weight_optimization/eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Python310\py...le or dire 
+   ctory:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+=== SIGN_POLICY | LR=0.01 | END 2026-05-17 02:09:39 ===
+
+=== END 2026-05-17 02:09:39 ===

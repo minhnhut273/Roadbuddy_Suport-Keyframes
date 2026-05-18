@@ -1,0 +1,479 @@
+﻿=== START 2026-05-17 02:12:02 ===
+=== SIGN_POLICY | LR=0.001 | START 2026-05-17 02:12:02 ===
+[1/3] Loading training data...
+  Policy filter: sign_policy
+  Filtered Train: 27330 | Val: 9109 | Test: 9113
+  Train: 27330 | Val: 9109 | Test: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+[2/3] Training optimizer...
+Training on 1214 samples | 747 support, 26583 non-support frames
+Validating on 1214 samples | 248 support, 8861 non-support frames
+Epoch 1: objective=0.4641 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3100
+Epoch 2: objective=0.4641 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3100
+Epoch 3: objective=0.4643 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3064
+Epoch 4: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 5: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 6: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 7: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 8: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 9: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 10: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 11: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 12: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Early stopping at epoch 12
+[3/3] Saving results...
+ Weights saved to outputs\weights_sign_lr_0001\optimized_weights_sign_policy.yaml
+ Log saved to outputs\weights_sign_lr_0001\training_log_sign_policy.json
+
+ Best Validation Results:
+  hit@1               : 0.1480
+  hit@3               : 0.4933
+  hit@5               : 0.7040
+  mrr                 : 0.3741
+  ap                  : 0.3707
+  mean_min_distance   : 3.4073
+  pairwise_accuracy   : 0.5092
+  asym_nearest_distance: 1.3064
+[1/4] Loading data and weights...
+  Policy filter: sign_policy
+  Filtered Test size: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+  [DEBUG] load_weights_from_yaml reading: outputs\weights_sign_lr_0001\optimized_weights_sign_policy.yaml
+  [DEBUG] config type: <class 'dict'>
+  [DEBUG] top-level keys: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+  [DEBUG] using full config as weights dict
+  Optimized weights loaded: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+[2/4] Evaluating on test set...
+[3/4] Computing comparison...
+[4/4] Saving results...
+ Results saved to outputs\metrics\eval_sign_lr_0001.json
+
+============================================================
+WEIGHT COMPARISON
+============================================================
+sharpness           : 0.0628 -> 0.0628 (-0.0%)
+edge_density        : 0.0708 -> 0.0709 (+0.1%)
+brightness          : 0.0024 -> 0.0022 (-7.7%)
+novelty             : 0.0006 -> 0.0006 (-2.6%)
+center_bias         : 0.0017 -> 0.0017 (-0.5%)
+roi_sharpness       : 0.3800 -> 0.3801 (+0.0%)
+roi_edge_density    : 0.3999 -> 0.4000 (+0.0%)
+roi_brightness      : 0.0816 -> 0.0816 (+0.0%)
+
+============================================================
+BASELINE METRICS (Test Set)
+============================================================
+  hit@1               : 0.2328
+  hit@3               : 0.5431
+  hit@5               : 0.7672
+  mrr                 : 0.4501
+  ap                  : 0.4366
+  mean_min_distance   : 2.9576
+  pairwise_accuracy   : 0.5838
+  asym_nearest_distance: 1.0969
+
+============================================================
+OPTIMIZED METRICS (Test Set)
+============================================================
+  hit@1               : 0.2328
+  hit@3               : 0.5431
+  hit@5               : 0.7672
+  mrr                 : 0.4501
+  ap                  : 0.4366
+  mean_min_distance   : 2.9576
+  pairwise_accuracy   : 0.5838
+  asym_nearest_distance: 1.0903
+
+============================================================
+METRIC CHANGES
+============================================================
+python : Traceback (most recent call last):
+At line:24 char:3
++   python eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call  
+   last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 321, in <module>
+    main()
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 317, in main
+    print(f"{sign} {metric_name:20s}: {delta['baseline']:.4f} -> 
+{delta['optimized']:.4f} ({delta['pct_change']:+.1f}%)")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in 
+position 0: character maps to <undefined>
+=== SIGN_POLICY | LR=0.001 | END 2026-05-17 02:12:10 ===
+
+=== SIGN_POLICY | LR=0.003 | START 2026-05-17 02:12:10 ===
+[1/3] Loading training data...
+  Policy filter: sign_policy
+  Filtered Train: 27330 | Val: 9109 | Test: 9113
+  Train: 27330 | Val: 9109 | Test: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+[2/3] Training optimizer...
+Training on 1214 samples | 747 support, 26583 non-support frames
+Validating on 1214 samples | 248 support, 8861 non-support frames
+Epoch 1: objective=0.4643 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3064
+Epoch 2: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 3: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 4: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 5: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 6: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 7: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 8: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 9: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 10: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3437
+Early stopping at epoch 10
+[3/3] Saving results...
+ Weights saved to outputs\weights_sign_lr_0003\optimized_weights_sign_policy.yaml
+ Log saved to outputs\weights_sign_lr_0003\training_log_sign_policy.json
+
+ Best Validation Results:
+  hit@1               : 0.1480
+  hit@3               : 0.4933
+  hit@5               : 0.7040
+  mrr                 : 0.3741
+  ap                  : 0.3707
+  mean_min_distance   : 3.4073
+  pairwise_accuracy   : 0.5092
+  asym_nearest_distance: 1.3064
+[1/4] Loading data and weights...
+  Policy filter: sign_policy
+  Filtered Test size: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+  [DEBUG] load_weights_from_yaml reading: outputs\weights_sign_lr_0003\optimized_weights_sign_policy.yaml
+  [DEBUG] config type: <class 'dict'>
+  [DEBUG] top-level keys: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+  [DEBUG] using full config as weights dict
+  Optimized weights loaded: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+[2/4] Evaluating on test set...
+[3/4] Computing comparison...
+[4/4] Saving results...
+ Results saved to outputs\metrics\eval_sign_lr_0003.json
+
+============================================================
+WEIGHT COMPARISON
+============================================================
+sharpness           : 0.0628 -> 0.0628 (-0.0%)
+edge_density        : 0.0708 -> 0.0709 (+0.1%)
+brightness          : 0.0024 -> 0.0022 (-7.7%)
+novelty             : 0.0006 -> 0.0006 (-2.6%)
+center_bias         : 0.0017 -> 0.0017 (-0.5%)
+roi_sharpness       : 0.3800 -> 0.3801 (+0.0%)
+roi_edge_density    : 0.3999 -> 0.4000 (+0.0%)
+roi_brightness      : 0.0816 -> 0.0816 (+0.0%)
+
+============================================================
+BASELINE METRICS (Test Set)
+============================================================
+  hit@1               : 0.2328
+  hit@3               : 0.5431
+  hit@5               : 0.7672
+  mrr                 : 0.4501
+  ap                  : 0.4366
+  mean_min_distance   : 2.9576
+  pairwise_accuracy   : 0.5838
+  asym_nearest_distance: 1.0969
+
+============================================================
+OPTIMIZED METRICS (Test Set)
+============================================================
+  hit@1               : 0.2328
+  hit@3               : 0.5431
+  hit@5               : 0.7672
+  mrr                 : 0.4501
+  ap                  : 0.4366
+  mean_min_distance   : 2.9576
+  pairwise_accuracy   : 0.5838
+  asym_nearest_distance: 1.0903
+
+============================================================
+METRIC CHANGES
+============================================================
+python : Traceback (most recent call last):
+At line:24 char:3
++   python eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call  
+   last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 321, in <module>
+    main()
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 317, in main
+    print(f"{sign} {metric_name:20s}: {delta['baseline']:.4f} -> 
+{delta['optimized']:.4f} ({delta['pct_change']:+.1f}%)")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in 
+position 0: character maps to <undefined>
+=== SIGN_POLICY | LR=0.003 | END 2026-05-17 02:12:17 ===
+
+=== SIGN_POLICY | LR=0.005 | START 2026-05-17 02:12:17 ===
+[1/3] Loading training data...
+  Policy filter: sign_policy
+  Filtered Train: 27330 | Val: 9109 | Test: 9113
+  Train: 27330 | Val: 9109 | Test: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+[2/3] Training optimizer...
+Training on 1214 samples | 747 support, 26583 non-support frames
+Validating on 1214 samples | 248 support, 8861 non-support frames
+Epoch 1: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 2: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 3: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 4: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 5: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 6: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3437
+Epoch 7: objective=0.4570 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6951 | asym_dist=1.3437
+Epoch 8: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3439
+Epoch 9: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3439
+Epoch 10: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3439
+Early stopping at epoch 10
+[3/3] Saving results...
+ Weights saved to outputs\weights_sign_lr_0005\optimized_weights_sign_policy.yaml
+ Log saved to outputs\weights_sign_lr_0005\training_log_sign_policy.json
+
+ Best Validation Results:
+  hit@1               : 0.1480
+  hit@3               : 0.4933
+  hit@5               : 0.7040
+  mrr                 : 0.3741
+  ap                  : 0.3707
+  mean_min_distance   : 3.4073
+  pairwise_accuracy   : 0.5092
+  asym_nearest_distance: 1.3216
+[1/4] Loading data and weights...
+  Policy filter: sign_policy
+  Filtered Test size: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+  [DEBUG] load_weights_from_yaml reading: outputs\weights_sign_lr_0005\optimized_weights_sign_policy.yaml
+  [DEBUG] config type: <class 'dict'>
+  [DEBUG] top-level keys: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+  [DEBUG] using full config as weights dict
+  Optimized weights loaded: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+[2/4] Evaluating on test set...
+[3/4] Computing comparison...
+[4/4] Saving results...
+ Results saved to outputs\metrics\eval_sign_lr_0005.json
+
+============================================================
+WEIGHT COMPARISON
+============================================================
+sharpness           : 0.0628 -> 0.0628 (-0.0%)
+edge_density        : 0.0708 -> 0.0710 (+0.2%)
+brightness          : 0.0024 -> 0.0021 (-12.9%)
+novelty             : 0.0006 -> 0.0006 (-4.4%)
+center_bias         : 0.0017 -> 0.0017 (-0.8%)
+roi_sharpness       : 0.3800 -> 0.3801 (+0.0%)
+roi_edge_density    : 0.3999 -> 0.4000 (+0.0%)
+roi_brightness      : 0.0816 -> 0.0816 (+0.0%)
+
+============================================================
+BASELINE METRICS (Test Set)
+============================================================
+  hit@1               : 0.2328
+  hit@3               : 0.5431
+  hit@5               : 0.7672
+  mrr                 : 0.4501
+  ap                  : 0.4366
+  mean_min_distance   : 2.9576
+  pairwise_accuracy   : 0.5838
+  asym_nearest_distance: 1.0969
+
+============================================================
+OPTIMIZED METRICS (Test Set)
+============================================================
+  hit@1               : 0.2328
+  hit@3               : 0.5431
+  hit@5               : 0.7716
+  mrr                 : 0.4503
+  ap                  : 0.4368
+  mean_min_distance   : 2.9490
+  pairwise_accuracy   : 0.5852
+  asym_nearest_distance: 1.0903
+
+============================================================
+METRIC CHANGES
+============================================================
+python : Traceback (most recent call last):
+At line:24 char:3
++   python eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call  
+   last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 321, in <module>
+    main()
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 317, in main
+    print(f"{sign} {metric_name:20s}: {delta['baseline']:.4f} -> 
+{delta['optimized']:.4f} ({delta['pct_change']:+.1f}%)")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in 
+position 0: character maps to <undefined>
+=== SIGN_POLICY | LR=0.005 | END 2026-05-17 02:12:24 ===
+
+=== SIGN_POLICY | LR=0.01 | START 2026-05-17 02:12:24 ===
+[1/3] Loading training data...
+  Policy filter: sign_policy
+  Filtered Train: 27330 | Val: 9109 | Test: 9113
+  Train: 27330 | Val: 9109 | Test: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+[2/3] Training optimizer...
+Training on 1214 samples | 747 support, 26583 non-support frames
+Validating on 1214 samples | 248 support, 8861 non-support frames
+Epoch 1: objective=0.4635 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3216
+Epoch 2: objective=0.4613 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3216
+Epoch 3: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3437
+Epoch 4: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3439
+Epoch 5: objective=0.4593 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3439
+Epoch 6: objective=0.4603 | hit@1=0.1435 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3507
+Epoch 7: objective=0.4602 | hit@1=0.1435 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3513
+Epoch 8: objective=0.4611 | hit@1=0.1435 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3335
+Epoch 9: objective=0.4611 | hit@1=0.1435 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3335
+Epoch 10: objective=0.4636 | hit@1=0.1390 | hit@3=0.5022 | hit@5=0.7040 | asym_dist=1.3374
+Epoch 11: objective=0.4623 | hit@1=0.1390 | hit@3=0.4978 | hit@5=0.7040 | asym_dist=1.3374
+Epoch 12: objective=0.4631 | hit@1=0.1435 | hit@3=0.4978 | hit@5=0.7040 | asym_dist=1.3392
+Epoch 13: objective=0.4617 | hit@1=0.1435 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3392
+Epoch 14: objective=0.4631 | hit@1=0.1435 | hit@3=0.4978 | hit@5=0.7040 | asym_dist=1.3392
+Epoch 15: objective=0.4631 | hit@1=0.1435 | hit@3=0.4978 | hit@5=0.7040 | asym_dist=1.3392
+Epoch 16: objective=0.4640 | hit@1=0.1480 | hit@3=0.4978 | hit@5=0.7040 | asym_dist=1.3389
+Epoch 17: objective=0.4640 | hit@1=0.1480 | hit@3=0.4978 | hit@5=0.7040 | asym_dist=1.3389
+Epoch 18: objective=0.4627 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3389
+Epoch 19: objective=0.4627 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.7040 | asym_dist=1.3389
+Epoch 20: objective=0.4604 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3389
+Epoch 21: objective=0.4604 | hit@1=0.1480 | hit@3=0.4933 | hit@5=0.6996 | asym_dist=1.3389
+Epoch 22: objective=0.4623 | hit@1=0.1480 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3289
+Epoch 23: objective=0.4623 | hit@1=0.1480 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3289
+Epoch 24: objective=0.4623 | hit@1=0.1480 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3289
+Epoch 25: objective=0.4623 | hit@1=0.1480 | hit@3=0.4978 | hit@5=0.6996 | asym_dist=1.3289
+Early stopping at epoch 25
+[3/3] Saving results...
+ Weights saved to outputs\weights_sign_lr_001\optimized_weights_sign_policy.yaml
+ Log saved to outputs\weights_sign_lr_001\training_log_sign_policy.json
+
+ Best Validation Results:
+  hit@1               : 0.1480
+  hit@3               : 0.4978
+  hit@5               : 0.7040
+  mrr                 : 0.3751
+  ap                  : 0.3718
+  mean_min_distance   : 3.4028
+  pairwise_accuracy   : 0.5079
+  asym_nearest_distance: 1.3389
+[1/4] Loading data and weights...
+  Policy filter: sign_policy
+  Filtered Test size: 9113
+  Baseline config path: D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\configs\selector.yaml
+  Baseline config exists: True
+  Baseline config top-level keys: ['fps_sample', 'fps_coarse', 'fps_refine', 'max_frames_per_video', 'top_k', 'temporal_nms_gap_sec', 'coarse_top_m', 'refine_window_sec', 'trim_ratio', 'roi_regions', 'weights', 'eval_tolerances_sec', 'save_top_frames', 'use_rerank', 'ocr_gpu', 'type_aware', 'type_to_policy', 'policy_configs']
+  Loaded baseline weights keys: ['sharpness', 'edge_density', 'brightness', 'novelty', 'center_bias', 'roi_sharpness', 'roi_edge_density', 'roi_brightness']
+  Loaded baseline weights values: {'sharpness': 0.0628244235950592, 'edge_density': 0.07083003210430476, 'brightness': 0.002431318146426647, 'novelty': 0.0006133904440990769, 'center_bias': 0.001719349361464989, 'roi_sharpness': 0.38003226227115017, 'roi_edge_density': 0.3999262123043595, 'roi_brightness': 0.08162301177313558}
+  [DEBUG] load_weights_from_yaml reading: outputs\weights_sign_lr_001\optimized_weights_sign_policy.yaml
+  [DEBUG] config type: <class 'dict'>
+  [DEBUG] top-level keys: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+  [DEBUG] using full config as weights dict
+  Optimized weights loaded: ['brightness', 'center_bias', 'edge_density', 'novelty', 'roi_brightness', 'roi_edge_density', 'roi_sharpness', 'sharpness']
+[2/4] Evaluating on test set...
+[3/4] Computing comparison...
+[4/4] Saving results...
+ Results saved to outputs\metrics\eval_sign_lr_001.json
+
+============================================================
+WEIGHT COMPARISON
+============================================================
+sharpness           : 0.0628 -> 0.0658 (+4.7%)
+edge_density        : 0.0708 -> 0.0776 (+9.6%)
+brightness          : 0.0024 -> 0.0010 (-59.2%)
+novelty             : 0.0006 -> 0.0078 (+1175.1%)
+center_bias         : 0.0017 -> 0.0090 (+425.9%)
+roi_sharpness       : 0.3800 -> 0.3673 (-3.3%)
+roi_edge_density    : 0.3999 -> 0.3861 (-3.4%)
+roi_brightness      : 0.0816 -> 0.0853 (+4.5%)
+
+============================================================
+BASELINE METRICS (Test Set)
+============================================================
+  hit@1               : 0.2328
+  hit@3               : 0.5431
+  hit@5               : 0.7672
+  mrr                 : 0.4501
+  ap                  : 0.4366
+  mean_min_distance   : 2.9576
+  pairwise_accuracy   : 0.5838
+  asym_nearest_distance: 1.0969
+
+============================================================
+OPTIMIZED METRICS (Test Set)
+============================================================
+  hit@1               : 0.2241
+  hit@3               : 0.5560
+  hit@5               : 0.7629
+  mrr                 : 0.4448
+  ap                  : 0.4322
+  mean_min_distance   : 2.9957
+  pairwise_accuracy   : 0.5780
+  asym_nearest_distance: 1.1214
+
+============================================================
+METRIC CHANGES
+============================================================
+python : Traceback (most recent call last):
+At line:24 char:3
++   python eval/evaluate_weights.py `
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call  
+   last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 321, in <module>
+    main()
+  File "D:\DOWNLOAD\ZALO_CHALLENGE\new\roadbuddy_sf\weight_optimization\ev
+al\evaluate_weights.py", line 317, in main
+    print(f"{sign} {metric_name:20s}: {delta['baseline']:.4f} -> 
+{delta['optimized']:.4f} ({delta['pct_change']:+.1f}%)")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in 
+position 0: character maps to <undefined>
+=== SIGN_POLICY | LR=0.01 | END 2026-05-17 02:12:38 ===
+
+=== END 2026-05-17 02:12:38 ===
